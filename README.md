@@ -1,0 +1,2 @@
+# Lemici_AssignMent_DataEngineering
+Lemici Data Engineering assignment
