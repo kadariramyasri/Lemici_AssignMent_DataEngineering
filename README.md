@@ -4,6 +4,14 @@ This repository contains my solution for the **Lemici IQ – Data Engineer Techn
 The project focuses on exploratory data analysis, machine learning fundamentals, and the design of a safe and explainable Retrieval-Augmented Generation (RAG) system for customer support use cases.
 
 ---
+## Dataset
+
+The `customer_support_tickets.csv` file contains customer tickets with fields such as:
+- Customer query text
+- Agent response text
+- Metadata (priority, category, etc.)
+
+This dataset is used for both ML models in Part 2 and RAG retrieval in Part 3.
 
 ## 📂 Project Structure
 
