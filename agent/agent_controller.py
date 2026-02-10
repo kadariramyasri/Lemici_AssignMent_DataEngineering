@@ -1,3 +1,6 @@
+import pdb
+
+
 class SupportAgent:
     """
     Autonomous agent that orchestrates the RAG pipeline.
@@ -39,7 +42,7 @@ class SupportAgent:
             print(f"Search Query: {current_query}")
 
             try:
-                response = self._run_rag(current_query)
+                response = self._run_rag(current_query)['response']
             except Exception as e:
                 print(f"[Error] RAG pipeline failed: {e}")
                 return "[ESCALATE] System error during knowledge retrieval."

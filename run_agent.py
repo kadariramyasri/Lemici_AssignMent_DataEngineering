@@ -4,7 +4,8 @@ from rag.pipeline import RAGPipeline
 if __name__ == "__main__":
     # Instantiate RAG pipeline EXACTLY once
     rag_pipeline = RAGPipeline(
-        response_column="response"   # this matches your dataset design
+        csv_path = "data/raw/customer_support_tickets.csv",
+        response_column="Resolution"   # this matches your dataset design
     )
 
     agent = SupportAgent(rag_pipeline=rag_pipeline)
