@@ -14,6 +14,39 @@ def generate_response(prompt: str) -> str:
 
     return (
         "Thank you for reaching out. "
-        "We understand your concern regarding duplicate charges. "
-        "Our support team will review your subscription billing and assist you further."
+        "We understand your concern "
+        "Our support team will review your concern and assist you further."
     )
+
+
+# import os
+# from openai import OpenAI
+# from dotenv import load_dotenv
+
+# # Load environment variables
+# load_dotenv()
+
+# client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+
+# def generate_response(prompt: str) -> str:
+#     """
+#     Real OpenAI LLM generator.
+#     Uses GPT-4o-mini for cost efficiency.
+#     """
+
+#     try:
+#         response = client.chat.completions.create(
+#             model="gpt-4o-mini",
+#             messages=[
+#                 {"role": "system", "content": "You are a professional customer support assistant."},
+#                 {"role": "user", "content": prompt}
+#             ],
+#             temperature=0.3,  # Lower = safer
+#             max_tokens=300
+#         )
+
+#         return response.choices[0].message.content.strip()
+
+#     except Exception as e:
+#         return f"Error generating response: {str(e)}"

@@ -19,21 +19,21 @@ def build_prompt(user_query: str, retrieved_texts: list[str]) -> str:
         )
 
     prompt = f"""
-You are a customer support assistant.
+            You are a customer support assistant.
 
-Context:
-{context_block}
+            Context:
+            {context_block}
 
-User Query:
-{user_query}
+            User Query:
+            {user_query}
 
-Instructions:
-- Do NOT invent facts
-- If context is weak, give a general helpful response
-- Be polite, clear, and professional
-- Do not mention internal systems or documents
+            Instructions:
+            - Do NOT invent facts
+            - If context is weak, give a general helpful response
+            - Be polite, clear, and professional
+            - Do not mention internal systems or documents
 
-Response:
-""".strip()
+            Response:
+            """.strip()
 
     return prompt
